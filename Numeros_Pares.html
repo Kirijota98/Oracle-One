@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h1>Numeros pares que hay hasta el numero maximo</h1>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+        saltarLinea();
+    }
+
+
+var numeroMaximo = parseInt(prompt("Ingresa el numero maximo que quieres conocer"))
+ var contador = 0   
+while (contador <= numeroMaximo){
+    imprimir(contador)
+    contador = contador + 2
+    
+}
+imprimir("FIN")
+</script>

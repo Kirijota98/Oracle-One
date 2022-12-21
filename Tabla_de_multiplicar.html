@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var Multiplicando = parseInt(prompt("Ingrese la tabla que quieres conocer"));
+    var multiplicador = parseInt(prompt("Hasta que digito quieres conocer"))
+    var multiplo = 1
+    
+    while( multiplo <= multiplicador ){
+        imprimir(Multiplicando * multiplo);
+        multiplo = multiplo + 1
+
+//        imprimir(Tabla + " x " + multiplicacion + " = " + TablaResultado )
+    }
+//    imprimir("Fin")
+
+</script>

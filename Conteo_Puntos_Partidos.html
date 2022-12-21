@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<h1>Cuenta los puntos de tu equipo</h1>
+
+<script type="text/javascript">
+function saltarLinea(){
+	document.write("<br>")
+	document.write("<br>")
+	document.write("<br>")
+
+}
+
+function imprimir(frase){
+document.write(frase);
+saltarLinea();
+
+}
+
+var nombreEquipo= prompt("Ingresa el Nombre de tu equipo")
+var partidosGanados= prompt("¿Cuantos partidos ganaron?")
+var partidosEmpatados= prompt("¿Cuantos partidos empataron?")
+
+
+  puntosTotales = partidosGanados * 3 + partidosEmpatados * 1;
+
+ imprimir( "El total de puntos de " + nombreEquipo + " es " + puntosTotales);
+
+ if (puntosTotales < 10){
+ 	imprimir(nombreEquipo +" No clasifica")
+}
+
+if (puntosTotales > 10) {
+	imprimir(nombreEquipo + " ha clasificado")
+}
+</script>
